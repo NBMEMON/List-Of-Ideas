@@ -1,9 +1,10 @@
 {
   "name": "naeeb-56-list-of-ideas",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "\"Creating a list where you can write your thoughts\"",
   "main": "index.js",
   "type":"module",
+  "bin":"index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

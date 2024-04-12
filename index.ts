@@ -6,12 +6,12 @@ let condition= true;
 while(condition){
 const ideas = await inquirer.prompt([
   {
-    message: "Write your Ideas",
+    message: "\n\tWrite your Ideas\t\n",
     type: "input",
     name: "user_idea",
   },
   {
-    message: "\tRank Your Idea is it a Good Idea or A Bad idea\t",
+    message: "\n\tRank Your Idea is it a Good Idea or A Bad idea\t\n",
     type: "list",
     choices: ["Good idea", "Bad idea"],
     name: "User_choice",
@@ -28,8 +28,8 @@ if (ideas.User_choice === "Good idea") {
 //   console.log("Bad Idea", bad_ideas);
 }
 
-console.log("Good Ideas:",good_ideas);
-console.log("Bad Idea:",bad_ideas);
+console.log("\t","Good Ideas:",good_ideas,"\t");
+console.log("\t","Bad Idea:",bad_ideas,"\t");
 
 let add_more = await inquirer.prompt([{
          message:"Want to add more",
